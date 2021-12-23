@@ -1,24 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <link rel="stylesheet" type="text/css" href="Semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="Semantic/semantic.min.js"></script>
+    <script src="js/index.js"></script>
+    <meta charset="ISO-8859-1">
     <title>RelMusics Guitar</title>
 </head>
 <body>
     <h2 class="ui block header">
-        RelMusics Guitar
+        <p style="margin-left: 20px; display: inline;">RelMusics Guitar</p>
+        
     </h2>
-    <div class="ui grid" >
-        <div class="nine wide column" style="  display: flex;
-        justify-content: center;
-        align-items: center;">
-            <i style="font-size: 52px;">TITULO</i>
+    <div class="ui grid" style="padding-top: 25px;">
+        <div class="eight wide column" style="border-right: 0px solid black;">
+            <form class="ui form" style="padding: 10px;" method="post" id="frmLogin">
+                <h4 class="ui dividing header">Login</h4>
+                <div class="field">
+                  <label>Email</label>
+                  <input type="text" name="email" id="email" placeholder="Email" >
+                </div>
+                <div class="field">
+                  <label>Senha</label>
+                  <input type="password" name="senha" id="senha"  placeholder="Senha" >
+                </div>
+                <div class="ui button" onclick="login()">Entrar</div>
+            </form>
         </div>
-        <div class="five wide column">
-            <img src="img/background.png" alt="" style="width: 400px;">
-        </div>
-    </div>
 
-    <hr>
+
+
+        <div class="eight wide column" style="border: 0px solid black;">
+            <form class="ui form"  style="padding: 10px;" id="frmCadastro">
+            <h4 class="ui dividing header">Cadastro</h4>
+            <div class="field">
+                <label>Nome e sobrenome</label>
+                <div class="two fields">
+                <div class="field">
+                    <input type="text" name="nome" placeholder="Nome" >
+                </div>
+                <div class="field">
+                    <input type="text" name="sobrenome" placeholder="Sobrenome">
+                </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Escolha uma senha e Confirme</label>
+                <div class="fields">
+                <div class="eight wide field">
+                    <input type="password" name="senha" placeholder="Senha" >
+                </div>
+                <div class="eight wide field">
+                    <input type="password" name="comfirma_senha" placeholder="Confirmar senha" >
+                </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label>Email</label>
+                
+                <div class="field">
+                    <input type="text" name="email" placeholder="Email" >
+                </div>
+            </div>
+
+            <div class="ui button" onclick="cadastrar()">Cadastrar</div>
+            </form>
+        </div>
+      </div>
+
+
+
+
+      <div class="ui mini modal" id="cadastroModal">
+        <div class="header">Feito!</div>
+        <div class="scrolling content">
+          <p>Conta criada com Sucesso.</p>
+        </div>
+      </div>
+
+      <div class="ui mini modal" id="emailModal">
+        <div class="header">Desculpe!</div>
+        <div class="scrolling content">
+          <p>Este email ja foi cadastrado.</p>
+        </div>
+      </div>
+
+      <div class="ui mini modal" id="email2Modal">
+        <div class="header">Desculpe!</div>
+        <div class="scrolling content">
+          <p>Preencha o campo email por favor.</p>
+        </div>
+      </div>
+
+      <div class="ui mini modal" id="nomeModal">
+        <div class="header">Desculpe!</div>
+        <div class="scrolling content">
+          <p>Preencha o campo nome por favor.</p>
+        </div>
+      </div>
+
+      <div class="ui mini modal" id="sobrenomeModal">
+        <div class="header">Desculpe!</div>
+        <div class="scrolling content">
+          <p>Preencha o campo sobrenome por favor.</p>
+        </div>
+      </div>
+
+      <div class="ui mini modal" id="senhaModal">
+        <div class="header">Desculpe!</div>
+        <div class="scrolling content">
+          <p>Confira novamente sua senha por favor.</p>
+        </div>
+      </div>
+
+
+
 </body>
 </html>
