@@ -1,10 +1,10 @@
 
 function cadastrar(){
-    var formData = $('#frmCadastro').serializeArray(); 
+    var formDataCadastro = $('#frmCadastro').serializeArray(); 
     $.ajax({
         type: 'POST',
         url: 'controller/usuario_cadastra.php',
-        data: formData,
+        data: formDataCadastro,
         success: function( result ) {
             let retorno = result;
             let obj = JSON.parse(retorno);
@@ -37,3 +37,20 @@ function cadastrar(){
     });
 }
 
+function login(){
+    var formDataLogin = $('#frmLogin').serializeArray(); 
+    $.ajax({
+        type: 'POST',
+        url: 'controller/usuario_login.php',
+        data: formDataLogin,
+        success: function( result ) {
+            let retorno = result;
+            let obj = JSON.parse(retorno);
+            
+            if( obj.status == 'success' ) {
+                window.location.replace('menu.php');
+                console.log("correto")
+            }
+        }
+    });
+}
