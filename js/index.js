@@ -49,8 +49,17 @@ function login(){
             
             if( obj.status == 'success' ) {
                 window.location.replace('menu.php');
-                console.log("correto")
+                //console.log("correto")
+            }else{
+                $('#senhaModal').modal('show');
+                return
             }
+
         }
     });
+}
+
+function ok(){
+    $('.ui.mini.modal').modal('hide')
+;
 }

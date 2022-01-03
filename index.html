@@ -48,7 +48,7 @@
             </div>
             <div class="field">
                 <label>Escolha uma senha e Confirme</label>
-                <div class="fields">
+                <div class="two fields">
                 <div class="eight wide field">
                     <input type="password" name="senha" placeholder="Senha" >
                 </div>
@@ -79,12 +79,18 @@
         <div class="scrolling content">
           <p>Conta criada com Sucesso.</p>
         </div>
+        <div class="actions">
+          <div class="ui button"  onclick='ok();' >OK</div>
+        </div>
       </div>
 
       <div class="ui mini modal" id="emailModal">
         <div class="header">Desculpe!</div>
         <div class="scrolling content">
           <p>Este email ja foi cadastrado.</p>
+        </div>
+        <div class="actions">
+          <div class="ui button"  onclick='ok();' >OK</div>
         </div>
       </div>
 
@@ -93,12 +99,18 @@
         <div class="scrolling content">
           <p>Preencha o campo email por favor.</p>
         </div>
+        <div class="actions">
+          <div class="ui button"  onclick='ok();' >OK</div>
+        </div>
       </div>
 
       <div class="ui mini modal" id="nomeModal">
         <div class="header">Desculpe!</div>
         <div class="scrolling content">
           <p>Preencha o campo nome por favor.</p>
+        </div>
+        <div class="actions">
+          <div class="ui button"  onclick='ok();' >OK</div>
         </div>
       </div>
 
@@ -107,12 +119,28 @@
         <div class="scrolling content">
           <p>Preencha o campo sobrenome por favor.</p>
         </div>
+        <div class="actions">
+          <div class="ui button"  onclick='ok();' >OK</div>
+        </div>
       </div>
 
       <div class="ui mini modal" id="senhaModal">
         <div class="header">Desculpe!</div>
         <div class="scrolling content">
           <p>Confira novamente sua senha por favor.</p>
+        </div>
+        <div class="actions">
+          <div class="ui button"  onclick='ok();' >OK</div>
+        </div>
+      </div>
+
+      <div class="ui mini modal" id="senhaModalErro">
+        <div class="header">Desculpe!</div>
+        <div class="scrolling content">
+          <p>Confira novamente seu email e senha por favor.</p>
+        </div>
+        <div class="actions">
+          <div class="ui button"  onclick='ok();' >OK</div>
         </div>
       </div>
 

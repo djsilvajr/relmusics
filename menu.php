@@ -44,19 +44,55 @@ if(!isset($_SESSION["usuario"])){
   </div>
 
 
+  <div class="ui grid">
+
+    <div class="row" style="border: 1px solid black">
+      <div class="three wide column" style="border-right:1px solid black; text-align:center;">
+      <p>Todas as minhas tabs</p>
+      </div>
+      <div class="ten wide column">
+        <p></p>
+      </div>
+      <div class="three wide column">
+        
+      </div>
+    </div>
+
+
+
+
+
+    <div class="row" style="border: 0px solid black;">
+      <div class="three wide column">
+     
+      </div>
+      <div class="ten wide column">
+        <p></p>
+      </div>
+      <div class="three wide column">
+      
+      </div>
+    </div>
+
+</div>
+
+
 
 
 <!-- modais -->
 
-<div class="ui mini modal">
+<div class="ui mini modal" id="logoutModal">
   <div class="header">Logout.</div>
   <div class="content">
     <p>Deseja deslogar do sistema?</p>
   </div>
   <div class="actions">
-    <div class="ui button"  onclick='logoutck();' >OK</div>
+    <div class="ui button"  onclick='logoutck();' >Sim</div>
+    <div class="ui button"  onclick='recusaLogout();' >Voltar</div>
   </div>
 </div>
+
+
 
 </body>
 </html>
