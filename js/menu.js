@@ -9,3 +9,11 @@ function logoutck(){
 function recusaLogout() {
     $('#logoutModal').modal('hide');
 }
+
+function fecharGerenciador() {
+    $('#gerenciadorModal').modal('hide');
+}
+
+function gerenciadorScreen() {
+    $('#gerenciadorModal').modal('show');
+}

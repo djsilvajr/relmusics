@@ -1,3 +1,10 @@
 #header a{
     padding: 25px;
 }
+
+#gerenciadorModal {
+    display: inline-block !important;
+    position: relative;
+    visibility: hidden;
+    
+  }

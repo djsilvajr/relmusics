@@ -1,6 +1,5 @@
 <?php
 include_once 'controller/pdo.php';
-
 session_start();
 
 if(!isset($_SESSION["usuario"])){
@@ -31,22 +30,22 @@ if(!isset($_SESSION["usuario"])){
 
   <div class="ui secondary  menu" id="header">
     <a class="item" href="menu.php">
-      Menu
+    <i class="home icon" style="margin-right:5px;"></i> Menu
     </a>
-    <a class="item">
-      Gerenciador de projetos
-    </a>
+    <a class="item" onclick='gerenciadorScreen();'>
+    <i class="folder icon" style="margin-right:5px;"></i> Gerenciador de projetos 
+    </a> 
     <div class="right menu">
       <a class="ui item" id="deslogar" onclick='logoutckview();'>
-        Logout
+      <i class="power off icon" style="margin-right:5px"></i> Logout
       </a>
     </div>
   </div>
 
 
-  <div class="ui grid">
+  <div class="ui grid" style="border: 1px solid black;display:block;">
 
-    <div class="row" style="border: 1px solid black">
+    <div class="row" style="border-bottom: 1px solid black; height:45px;">
       <div class="three wide column" style="border-right:1px solid black; text-align:center;">
       <p>Todas as minhas tabs</p>
       </div>
@@ -62,9 +61,16 @@ if(!isset($_SESSION["usuario"])){
 
 
 
-    <div class="row" style="border: 0px solid black;">
-      <div class="three wide column">
-     
+    <div class="row" style="border: 1px solid red;display:block;">
+      <div class="three wide column"  style="border-right:1px solid black; text-align:center;">
+          <p>Todas as minhas tabs</p>
+          <p>Todas as minhas tabs</p>
+          <p>Todas as minhas tabs</p>
+          <p>Todas as minhas tabs</p>
+          <p>Todas as minhas tabs</p>
+          <p>Todas as minhas tabs</p>
+          <p>Todas as minhas tabs</p>
+          <p>Todas as minhas tabs</p>
       </div>
       <div class="ten wide column">
         <p></p>
@@ -80,19 +86,10 @@ if(!isset($_SESSION["usuario"])){
 
 
 <!-- modais -->
-
-<div class="ui mini modal" id="logoutModal">
-  <div class="header">Logout.</div>
-  <div class="content">
-    <p>Deseja deslogar do sistema?</p>
-  </div>
-  <div class="actions">
-    <div class="ui button"  onclick='logoutck();' >Sim</div>
-    <div class="ui button"  onclick='recusaLogout();' >Voltar</div>
-  </div>
-</div>
-
-
+<?php 
+include 'logout.php';
+include 'genrenciadorProjeto/gerenciador.php';
+?>
 
 </body>
 </html>
