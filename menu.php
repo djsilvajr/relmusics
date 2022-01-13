@@ -43,44 +43,6 @@ if(!isset($_SESSION["usuario"])){
   </div>
 
 
-  <div class="ui grid" style="border: 1px solid black;display:block;">
-
-    <div class="row" style="border-bottom: 1px solid black; height:45px;">
-      <div class="three wide column" style="border-right:1px solid black; text-align:center;">
-      <p>Todas as minhas tabs</p>
-      </div>
-      <div class="ten wide column">
-        <p></p>
-      </div>
-      <div class="three wide column">
-        
-      </div>
-    </div>
-
-
-
-
-
-    <div class="row" style="border: 1px solid red;display:block;">
-      <div class="three wide column"  style="border-right:1px solid black; text-align:center;">
-          <p>Todas as minhas tabs</p>
-          <p>Todas as minhas tabs</p>
-          <p>Todas as minhas tabs</p>
-          <p>Todas as minhas tabs</p>
-          <p>Todas as minhas tabs</p>
-          <p>Todas as minhas tabs</p>
-          <p>Todas as minhas tabs</p>
-          <p>Todas as minhas tabs</p>
-      </div>
-      <div class="ten wide column">
-        <p></p>
-      </div>
-      <div class="three wide column">
-      
-      </div>
-    </div>
-
-</div>
 
 
 
