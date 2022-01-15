@@ -4,7 +4,7 @@
     <p>Deseja deslogar do sistema?</p>
   </div>
   <div class="actions">
-    <div class="ui button"  onclick='logoutck();' >Sim</div>
+    <div class="ui button"  onclick='logoutck();' > Sim</div>
     <div class="ui button"  onclick='recusaLogout();' >Voltar</div>
   </div>
 </div>
