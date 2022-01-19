@@ -50,7 +50,11 @@ function gerenciadorScreen() {
 
 
 
-                  var row =   `<tr> <td>${result[i].nome}</td> <td>${criacao_data} ${criacao_hora} </td> <td>${edicao_data} ${edicao_hora}</td> <td>${result[i].publicado}</td> </tr>`
+                  var row =   `<tr> <td>${result[i].nome}</td> <td>${criacao_data} ${criacao_hora} </td> <td>${edicao_data} ${edicao_hora}</td> <td>${result[i].publicado}</td> <td>
+                  <button class="circular ui icon button"  onclick='editarProjeto(this.id)'; id="${result[i].id}" >
+                  <i class="icon edit"></i><spam style="margin-left:10px;">Editar<spam>
+                  </button>
+                  </td></tr>`
 
                   table.innerHTML += row;
               }
@@ -61,3 +65,9 @@ function gerenciadorScreen() {
     });
     
 }
+
+
+function editarProjeto(id){
+    let teste = id;
+    console.log(teste)
+ }

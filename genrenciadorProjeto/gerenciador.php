@@ -23,6 +23,7 @@ include_once 'frmAdicionaProjeto.php';
         <th>Criação Data/Hora</th>
         <th>Ultima Atualização</th>
         <th>Publicado</th>
+        <th>Ação</th>
       </tr>
     </thead>
     <tbody id="tableProjetosTbody" >
@@ -38,9 +39,6 @@ include_once 'frmAdicionaProjeto.php';
         <th colspan="5">
           <div class="ui right floated small primary labeled icon button" onclick='formAdicionarProjeto();'>
           <i class="plus icon"></i> Adicionar Projeto
-          </div>
-          <div class="ui small button"  onclick='desabilitarProjeto();'> 
-          <i class="x icon"></i> Desabilitar
           </div>
         </th>
       </tr>

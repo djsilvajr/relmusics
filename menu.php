@@ -18,6 +18,7 @@ if(!isset($_SESSION["usuario"])){
     <link rel="stylesheet" type="text/css" href="Semantic/semantic.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    
     <script src="Semantic/semantic.min.js"></script>
     <script src="Semantic/semantic.js"></script>
     <script src="js/menu.js"></script>
