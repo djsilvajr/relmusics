@@ -70,4 +70,20 @@ function gerenciadorScreen() {
 function editarProjeto(id){
     let teste = id;
     console.log(teste)
+
+    //$('#gerenciadorModal').modal('show');
+    $.ajax({
+        type: 'GET',
+        url: 'controller/getProjetoEdita.php?projeto_id=' +id,
+        success: function( resultado ){
+            let retorno = resultado;
+            let result = JSON.parse(retorno);
+           
+
+        }
+
+    });
+
+
+
  }
