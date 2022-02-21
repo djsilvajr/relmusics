@@ -59,7 +59,11 @@ function login(){
     });
 }
 
+function CadastroLogin(){
+    $('#modalCriarConta').modal('show');
+}
+
 function ok(){
-    $('.ui.mini.modal').modal('hide')
+    $('.ui.modal').modal('hide')
 ;
 }

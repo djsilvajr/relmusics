@@ -27,8 +27,17 @@ if(!isset($_SESSION["usuario"])){
 </head>
 <body>
 
-
-
+<style type="text/css">
+      #warning-message { display: none; }
+      @media only screen and (orientation:portrait){
+          #wrapper { display:none; }
+          #warning-message { display:block; }
+      }
+      @media only screen and (orientation:landscape){
+          #warning-message { display:none; }
+      }
+</style>
+<div id="wrapper">
   <div class="ui secondary  menu" id="header">
     <a class="item" href="menu.php">
     <i class="home icon" style="margin-right:5px;"></i> Menu
@@ -42,13 +51,29 @@ if(!isset($_SESSION["usuario"])){
       </a>
     </div>
   </div>
+</div>
 
 
+<div id="warning-message">
+    Site Visivel Apenas Com Celular Na Horizontal 
+</div>
+  
 
 
 
 
 <!-- modais -->
+
+<div class="ui mini modal" id="modalSucesso">
+    <div class="header">Pronto!</div>
+    <div class="content">
+      <p>Projeto Adicionado com sucesso</p>
+    </div>
+    <div class="actions">
+      <div class="ui button"  onclick='gerenciadorScreen();' >OK</div>
+    </div>
+</div>
+
 <?php 
 include 'logout.php';
 include 'genrenciadorProjeto/gerenciador.php';
